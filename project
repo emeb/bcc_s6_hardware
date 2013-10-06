@@ -1,0 +1,4 @@
+schematics	bcc_s6_pg1.sch bcc_s6_pg2.sch bcc_s6_pg3.sch
+output-name	bcc_s6
+elements-dir	../pcb-elements/
+skip-m4
