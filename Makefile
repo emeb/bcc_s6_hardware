@@ -13,7 +13,7 @@ CVT = convert
 
 # Targets
 clean:
-	-rm -f *~ *- *.new.pcb *.cmd *.net *.pdf *.jpg bom.txt
+	-rm -f *~ *- *.new.pcb *.cmd *.net *.pdf *.jpg bom.txt *.ps
 
 bom:
 	$(GNET) -g bom $(DESIGN)_pg?.sch -o bom.txt
@@ -22,11 +22,9 @@ sch_pdf:
 	$(GSCH) -p -o $(DESIGN)_pg1.ps -s print.scm $(DESIGN)_pg1.sch
 	$(GSCH) -p -o $(DESIGN)_pg2.ps -s print.scm $(DESIGN)_pg2.sch
 	$(GSCH) -p -o $(DESIGN)_pg3.ps -s print.scm $(DESIGN)_pg3.sch
-	$(PDF) $(DESIGN)_pg1.ps
-	$(PDF) $(DESIGN)_pg2.ps
-	$(PDF) $(DESIGN)_pg3.ps
-	cat $(DESIGN)_pg?.pdf > $(DESIGN).pdf
-	rm -f *.ps $(DESIGN)_pg?.pdf
+	cat $(DESIGN)_pg?.ps > $(DESIGN).ps
+	$(PDF) $(DESIGN).ps
+	rm -f *.ps
 
 render_front:
 	$(PCB) -x png --photo-mode --dpi 450  --use-alpha --only-visible \
