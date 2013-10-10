@@ -9,6 +9,6 @@ and targets a 4-layer PCB with 6mil/6mil design rules.
 
 Find out more about the BCC at the main web page:
 
-http://ebrombaugh.studionebula.com/embedded/bcc/index.html
+http://ebrombaugh.studionebula.com/embedded/bcc_s6/index.html
 
-Eric Brombaugh 12/31/2012
+Eric Brombaugh 10/10/2013
