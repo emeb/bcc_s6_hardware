@@ -13,7 +13,7 @@ CVT = convert
 
 # Targets
 clean:
-	-rm -f *~ *- *.new.pcb *.cmd *.net *.pdf *.jpg bom.txt *.ps *.zip
+	-rm -f *~ *- *.new.pcb *.cmd *.net *.pdf *.jpg bom.txt *.ps *.zip *.bak
 
 bom:
 	$(GNET) -g bom $(DESIGN)_pg?.sch -o bom.txt
