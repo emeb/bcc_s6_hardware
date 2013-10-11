@@ -13,7 +13,7 @@ CVT = convert
 
 # Targets
 clean:
-	-rm -f *~ *- *.new.pcb *.cmd *.net *.pdf *.jpg bom.txt *.ps
+	-rm -f *~ *- *.new.pcb *.cmd *.net *.pdf *.jpg bom.txt *.ps *.zip
 
 bom:
 	$(GNET) -g bom $(DESIGN)_pg?.sch -o bom.txt
@@ -47,16 +47,6 @@ gerber:
 
 oshpark: bcc_s6.pcb
 	$(PCB) -x gerber --gerberfile $(DESIGN) bcc_s6.pcb
-	mv $(DESIGN).bottom.gbr $(DESIGN).GBL
-	mv $(DESIGN).bottommask.gbr  $(DESIGN).GTS
-	mv $(DESIGN).group1.gbr  $(DESIGN).G2L
-	mv $(DESIGN).group2.gbr  $(DESIGN).G3L
-	mv $(DESIGN).top.gbr  $(DESIGN).GTL
-	mv $(DESIGN).topmask.gbr  $(DESIGN).GTS
-	mv $(DESIGN).topsilk.gbr  $(DESIGN).GTO
-	mv $(DESIGN).outline.gbr  $(DESIGN).GKO
-	mv $(DESIGN).plated-drill.cnc  $(DESIGN)_plated.XLN
-	mv $(DESIGN).unplated-drill.cnc $(DESIGN)_unplated.XLN
-	zip $(DESIGN)_oshpark.zip *.G?? *.XLN
-	rm *.G?? *.XLN *.gbr
+	./mk_oshpark.pl $(DESIGN)
+	rm *.gbr *.cnc
 	
