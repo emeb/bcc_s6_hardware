@@ -6,7 +6,7 @@ FileVersion[20091103]
 PCB["BeagleBone FPGA" 3400.00mil 2150.00mil]
 
 Grid[500.000000 0.0000 0.0000 1]
-Cursor[655.00mil 560.00mil 0.000000]
+Cursor[1115.00mil 870.00mil 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 6.00mil 6.00mil 6.00mil 13.00mil 7.00mil]
@@ -1949,7 +1949,7 @@ Element["" "my_0805" "C101" "10uF_10V" 550.00mil 1815.00mil 45.00mil 50.00mil 1 
 
 	)
 
-Element["" "my_0805" "C102" "10uF_10V" 312.60mil 2015.00mil -48.39mil 49.46mil 0 100 ""]
+Element["" "my_0805" "C102" "10uF_10V" 312.60mil 2015.00mil -253.39mil -25.54mil 0 100 ""]
 (
 	Pad[-37.40mil -3.93mil -37.40mil 3.93mil 51.18mil 20.00mil 56.00mil "input" "1" "square"]
 	Pad[37.40mil -3.93mil 37.40mil 3.93mil 51.18mil 20.00mil 56.00mil "input" "2" "square"]
@@ -1973,7 +1973,7 @@ Element["" "vlf3010" "L101" "2.2uH" 425.00mil 1890.00mil -10.00mil 175.00mil 1 1
 
 	)
 
-Element["" "vlf3010" "L102" "2.2uH" 425.00mil 1540.00mil 40.00mil -125.00mil 0 100 ""]
+Element["" "vlf3010" "L102" "2.2uH" 425.00mil 1540.00mil 65.00mil 60.00mil 1 100 ""]
 (
 	Pad[-10.00mil 54.00mil 10.00mil 54.00mil 25.00mil 30.00mil 31.00mil "" "1" "square"]
 	Pad[-10.00mil -54.00mil 10.00mil -54.00mil 25.00mil 30.00mil 31.00mil "" "2" "square"]
@@ -2051,7 +2051,7 @@ Element["" "my_0603" "R304" "4.7k" 37.2450mm 29.4300mm -153.90mil -91.11mil 0 10
 
 	)
 
-Element["" "HEADER6_2" "J104" "unknown" 895.00mil 720.00mil -30.00mil -125.00mil 0 100 ""]
+Element["" "HEADER6_2" "J104" "unknown" 895.00mil 720.00mil 155.00mil 155.00mil 1 100 ""]
 (
 	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,thermal(2X)"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "thermal(1X)"]
@@ -3645,6 +3645,10 @@ Layer(10 "silk")
 	Text[1335.00mil 1865.00mil 0 100 "BBB P9" "clearline"]
 	Text[3005.00mil 1275.00mil 1 100 "External I/O" "clearline"]
 	Text[1180.00mil 380.00mil 0 100 "Rev -" "clearline"]
+	Text[870.00mil 650.00mil 1 100 "3.3V" "clearline"]
+	Text[965.00mil 650.00mil 1 100 "GND" "clearline"]
+	Text[450.00mil 1395.00mil 0 100 "1.2V" "clearline"]
+	Text[340.00mil 2065.00mil 0 100 "3.3V" "clearline"]
 )
 NetList()
 (
