@@ -6,7 +6,7 @@ FileVersion[20091103]
 PCB["BeagleBone FPGA" 3400.00mil 2150.00mil]
 
 Grid[500.000000 0.0000 0.0000 1]
-Cursor[1115.00mil 870.00mil 0.000000]
+Cursor[1860.00mil 1530.00mil 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 6.00mil 6.00mil 6.00mil 13.00mil 7.00mil]
@@ -2068,7 +2068,7 @@ Element["" "HEADER6_2" "J104" "unknown" 895.00mil 720.00mil 155.00mil 155.00mil 
 
 	)
 
-Element["" "SOD123" "D101" "DNI" 2930.00mil 1605.00mil -105.00mil -65.00mil 3 100 ""]
+Element["" "SOD123" "D101" "DNI" 2855.00mil 1605.00mil -105.00mil -65.00mil 3 100 ""]
 (
 	Pad[55.00mil -6.00mil 55.00mil 6.00mil 69.00mil 20.00mil 75.00mil "1" "1" "square"]
 	Pad[-55.00mil -6.00mil -55.00mil 6.00mil 69.00mil 20.00mil 75.00mil "2" "2" "square"]
@@ -3115,11 +3115,8 @@ Layer(1 "component")
 	Line[1685.00mil 29.0074mm 42.0627mm 29.7437mm 10.00mil 12.00mil "clearline"]
 	Line[1715.00mil 1195.00mil 1770.00mil 1195.00mil 6.00mil 12.00mil "clearline"]
 	Line[1770.00mil 1195.00mil 1775.00mil 1190.00mil 6.00mil 12.00mil "clearline"]
-	Line[2995.00mil 1610.00mil 3060.00mil 1610.00mil 30.00mil 20.00mil "clearline"]
 	Line[3060.00mil 1610.00mil 3065.00mil 1605.00mil 30.00mil 20.00mil "clearline"]
 	Line[3065.00mil 1605.00mil 3065.00mil 1610.00mil 30.00mil 20.00mil "clearline"]
-	Line[2725.00mil 1605.00mil 2880.00mil 1605.00mil 30.00mil 20.00mil "clearline"]
-	Line[2880.00mil 1605.00mil 2885.00mil 1610.00mil 30.00mil 20.00mil "clearline"]
 	Line[1775.00mil 2075.00mil 1730.00mil 2120.00mil 6.00mil 12.00mil "clearline"]
 	Line[1730.00mil 2120.00mil 1050.00mil 2120.00mil 6.00mil 12.00mil "clearline"]
 	Line[1050.00mil 2120.00mil 1025.00mil 2095.00mil 6.00mil 12.00mil "clearline"]
@@ -3128,6 +3125,10 @@ Layer(1 "component")
 	Line[640.00mil 1890.00mil 650.00mil 1890.00mil 30.00mil 20.00mil "clearline"]
 	Line[650.00mil 1890.00mil 665.00mil 1905.00mil 30.00mil 20.00mil "clearline"]
 	Line[440.00mil 195.00mil 440.00mil 160.00mil 6.00mil 12.00mil "clearline"]
+	Line[2725.00mil 1605.00mil 2800.00mil 1605.00mil 30.00mil 20.00mil ""]
+	Line[2800.00mil 1605.00mil 2790.00mil 1605.00mil 30.00mil 20.00mil ""]
+	Line[3060.00mil 1610.00mil 2915.00mil 1610.00mil 30.00mil 20.00mil ""]
+	Line[2915.00mil 1610.00mil 2910.00mil 1605.00mil 30.00mil 20.00mil ""]
 	Polygon("clearpoly")
 	(
 		[2125.00mil 540.00mil] [2635.00mil 1050.00mil] [2125.00mil 1560.00mil] [1615.00mil 1050.00mil] 
@@ -3649,6 +3650,7 @@ Layer(10 "silk")
 	Text[965.00mil 650.00mil 1 100 "GND" "clearline"]
 	Text[450.00mil 1395.00mil 0 100 "1.2V" "clearline"]
 	Text[340.00mil 2065.00mil 0 100 "3.3V" "clearline"]
+	Text[2990.00mil 1605.00mil 0 100 "5V" "clearline"]
 )
 NetList()
 (
