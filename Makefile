@@ -43,10 +43,10 @@ render_back:
 gerber:
 	rm -rf gerbers
 	mkdir gerbers
-	$(PCB) -x gerber --gerberfile gerbers/$(DESIGN) bcc_s6.pcb
+	$(PCB) -x gerber --gerberfile gerbers/$(DESIGN) $(DESIGN).pcb
 
-oshpark: bcc_s6.pcb
-	$(PCB) -x gerber --gerberfile $(DESIGN) bcc_s6.pcb
+oshpark: $(DESIGN).pcb
+	$(PCB) -x gerber --gerberfile $(DESIGN) $(DESIGN).pcb
 	./mk_oshpark.pl $(DESIGN)
 	rm *.gbr *.cnc
 	
