@@ -1,0 +1,4 @@
+schematics		bob_s6.sch
+output-name		bob_s6
+elements-dir	../pcb-elements/
+skip-m4
